@@ -1,0 +1,30 @@
+.card-title{
+    margin-top: -4px;
+    margin-bottom: 33px;
+    font-family: unset;
+    font-size: 23px;
+    text-align: center;
+}
+.card{
+    border-radius: 10px;
+    padding: 17px;
+    margin-left: 38px;
+    margin-block-end: 39px;
+    margin-block-start: 10px;
+
+}
+.picture{
+    width: 272px;
+    height: 209px;
+    margin: -23px 0;
+    margin-bottom: 4px;
+}
+.btn-info{
+    background-color: midnightblue;
+    border-color: #f3d8aa;
+    padding: 9px 26px;
+    margin-bottom: 21px;
+    border-radius: 14px;
+    margin-left: 116px;
+    caret-color: darkgray;
+}

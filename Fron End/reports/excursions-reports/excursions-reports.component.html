@@ -1,0 +1,12 @@
+<div style="display: block;">
+  <h2 class ="title"> {{title}} </h2>
+  <h4 class="descriptions">Muestra las actividades más realizadas en un rango de fecha definido.</h4>
+  <app-reports-search [reportsSearchViewModel]="reportsSearchViewModel" 
+    (reportsSearchViewModelEmitter)="searchExcursionsReports($event)"
+  ></app-reports-search>
+  <canvas *ngIf="showChart()" baseChart  width="1119px" height="559px"
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+   </canvas>

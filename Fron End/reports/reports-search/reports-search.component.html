@@ -1,0 +1,26 @@
+<div class="col-md-10 col-md-offset-2">
+  <mat-accordion>
+      <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+              Filtros
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="well well-lg">
+    <form [formGroup]=formGroup (ngSubmit)="onSubmit()">
+        <mat-form-field>
+            <input matInput [matDatepicker]="from" placeholder="Desde" formControlName="from" (dateChange)="dateChange($event)">
+            <mat-datepicker-toggle matSuffix [for]="from"></mat-datepicker-toggle>
+            <mat-datepicker #from></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [min]="from" [matDatepicker]="to" placeholder="Hasta" formControlName="to">
+            <mat-datepicker-toggle matSuffix [for]="to"></mat-datepicker-toggle>
+            <mat-datepicker #to></mat-datepicker>
+        </mat-form-field>
+        <button type="submit" mat-button [disabled]="!formValid()" class="btn btn-success btn-sm pull-right">Buscar</button>
+    </form>
+        </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
