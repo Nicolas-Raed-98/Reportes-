@@ -1,0 +1,3 @@
+Acá se encuentra gran parte del proyecto, por razones de confidensialidad algunas cosas puntuales no se han podido subir
+por lo tanto a la hora de correrlo no se va poder.
+En el repositorio van a encontrar imágenes de como se ve funcionando, realizando las consultas a la base de datos.
