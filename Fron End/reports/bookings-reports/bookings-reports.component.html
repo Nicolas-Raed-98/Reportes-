@@ -1,0 +1,11 @@
+   <div style="display: block;">
+      <h2 class ="title"> {{title}} </h2>
+      <h4 class="descriptions">Cantidad de reservas que ingresaron al sistema en el año en curso, comparado con el año anterior.</h4>
+    <canvas *ngIf="showChart()" baseChart  width="1119px" height="559px"
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [legend]="barChartLegend"
+      [chartType]="barChartType">
+     </canvas>
+  </div>
+
